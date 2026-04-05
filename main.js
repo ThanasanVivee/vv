@@ -25,16 +25,16 @@ map.on('load', () => {
         source: 'roads-source',
         'source-layer': 'a8bc0c9ed6e95c51ff8f',
         paint: {
-            'line-color': '#d62828',
+            'line-color': '#00ffea',
             'line-width': 1.5,
             'line-opacity': 1
         }
     });
 
-    // admin source
+    // LAYER2 
     map.addSource('admin-source', {
         type: 'vector',
-        url: 'mapbox://peephumza.zdfltt4hnu0q'
+        url: 'mapbox://viveelove.61n24si9o4pi'
     });
 
     // admin layer
@@ -42,9 +42,9 @@ map.on('load', () => {
         id: 'admin-layer',
         type: 'line',
         source: 'admin-source',
-        'source-layer': '3233ccf4855e98ce2a1c',
+        'source-layer': '3c8c7f4930e00c0fa339',
         paint: {
-            'line-color': '#00FF00',
+            'line-color': '#ffa200',
             'line-width': 2,
             'line-opacity': 1
         }
