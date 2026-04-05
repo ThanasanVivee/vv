@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapbox Layer Toggle</title>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .layer-control {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+            background: white;
+            padding: 10px 12px;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="layer-control">
+        <label>
+            <input type="checkbox" id="roads-toggle" checked>
+            Roads
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="admin-toggle" checked>
+            Boundary
+        </label>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
